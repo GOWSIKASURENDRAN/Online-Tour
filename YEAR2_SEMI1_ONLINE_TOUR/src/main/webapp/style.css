@@ -1,0 +1,435 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  
+  /* Navbar */
+  .navbar {
+    background-color: #1e2a38;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    color: #ffa500;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('https://via.placeholder.com/1200x600?text=Explore+The+World') center/cover no-repeat;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    background-color: #ffa500;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ff8700;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Packages Preview */
+  .packages-preview {
+    padding: 4rem 2rem;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  
+  .packages-preview h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .package-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+  }
+  
+  .package-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .package-card h3 {
+    font-size: 1.3rem;
+    margin: 1rem 0 0.5rem;
+  }
+  
+  .package-card p {
+    padding: 0 1rem 1rem;
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  .package-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #1e2a38;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Form Section */
+.form-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+  }
+  
+  .form-container {
+    background: #fff;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1e2a38;
+  }
+  
+  .form-container label {
+    display: block;
+    margin: 0.8rem 0 0.3rem;
+    font-weight: bold;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+  }
+  
+  .form-container .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  
+  .form-note {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .form-note a {
+    color: #ffa500;
+    text-decoration: none;
+  }
+  /* Contact Page */
+.contact-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  
+  .contact-info,
+  .contact-form {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .contact-info h2,
+  .contact-form h2 {
+    margin-bottom: 1rem;
+    color: #1e2a38;
+  }
+  
+  .contact-info p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+  }
+  
+  .contact-map {
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+  
+  .contact-form form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+  
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.3rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  /* Packages Page */
+.packages-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .package-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .package-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .package-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .package-card h3 {
+    margin: 1rem;
+    color: #1e2a38;
+  }
+  
+  .package-card p {
+    margin: 0 1rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .price {
+    display: block;
+    margin: 0 1rem 1rem;
+    font-weight: bold;
+    color: #ffa500;
+  }
+  
+  .small-btn {
+    display: inline-block;
+    margin: 0 1rem 1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #1e2a38;
+    color: #fff;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .small-btn:hover {
+    background-color: #333;
+  }
+  
+  /* Profile Page */
+.profile-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+  }
+  
+  .profile-container {
+    max-width: 800px;
+    margin: auto;
+    background: #fdfdfd;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  }
+  
+  .profile-container h2,
+  .profile-container h3 {
+    color: #1e2a38;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-container p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+  }
+  
+  .profile-table th,
+  .profile-table td {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .logout-btn {
+    margin-top: 2rem;
+    background-color: #c0392b;
+  }
+  
+  .logout-btn:hover {
+    background-color: #a93226;
+  }
+  /* Admin Page */
+.admin-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+  }
+  
+  .admin-container {
+    max-width: 900px;
+    margin: auto;
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  .admin-container h2,
+  .admin-container h3 {
+    color: #1e2a38;
+    margin-bottom: 1rem;
+  }
+  
+  .admin-container form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+  
+  .admin-container form input,
+  .admin-container form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.3rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  .admin-table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+  }
+  
+  .admin-table th,
+  .admin-table td {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .delete-btn {
+    background-color: #e74c3c;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c0392b;
+  }
+  
+
